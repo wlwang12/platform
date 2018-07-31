@@ -1,6 +1,6 @@
 import {createStore, combineReducers} from 'redux';
-import LoginStatus from "./reducer/loginStatus";
-import LoadingStatus from './reducer/loadingStatus';
+import LoginStatus from "./reducers/loginStatus";
+import LoadingStatus from './reducers/loadingStatus';
 
 const reducers = combineReducers({
     LoginStatus,

@@ -101,6 +101,15 @@ module.exports = {
   module: {
     strictExportPresence: true,
     rules: [
+        {
+            test: /\.bundle\.js$/,
+            loader: require.resolve('bundle-loader'),
+            include:path.join(__dirname, 'src'),
+            options: {
+              lazy: true,
+              name: '[name]'
+          }
+        },
       // TODO: Disable require.ensure as it's not a standard language feature.
       // We are waiting for https://github.com/facebookincubator/create-react-app/issues/2176.
       // { parser: { requireEnsure: false } },

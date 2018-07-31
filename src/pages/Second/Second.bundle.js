@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink, withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {getAction} from '../../utills/axios'
-import Loading from './../../components/loading/loading';
 
 class Second extends React.Component{
     componentDidMount() {
@@ -17,7 +16,6 @@ class Second extends React.Component{
                 <p>
                     <NavLink exact to="/">to home page</NavLink>
                 </p>
-                <Loading />
             </div>
         )
     }

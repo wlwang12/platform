@@ -1,13 +1,12 @@
 import React from 'react';
 import { connect} from 'react-redux';
-import store from './../../redux/index';
+import store from './../../redux/store';
+import {loginStatusAction} from '../../redux/actions/loginStatusAction'
 
 class LoginPage extends React.Component{
 
     toggleLogin () {
-        store.dispatch({
-            type:'loginStatus'
-        })
+        store.dispatch(loginStatusAction())
     }
 
     render () {

@@ -5,7 +5,7 @@ const init = {
 
 const LoadingStatus = (state = init, action) => {
     switch (action.type) {
-        case 'loadingStatus':
+        case 'LOADING-STATUS':
             return {
                 loadingStatus: action.bool
             }

@@ -5,7 +5,7 @@ const init = {
 
 const LoginStatus = (state = init, action) => {
     switch (action.type) {
-        case 'loginStatus':
+        case 'LOGIN-STATUS':
             return {
                 loginStatus: !state.loginStatus
             }
