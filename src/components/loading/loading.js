@@ -3,7 +3,6 @@ import Protal from "../protal";
 import { Spin } from 'antd';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import 'antd/dist/antd.css';
 import styles from './loading.css';
 
 class Loading extends React.Component {
