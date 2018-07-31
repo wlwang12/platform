@@ -37,9 +37,9 @@ ajax.interceptors.response.use(function (response) {  // 接受请求后reqNumer
         return { "success": true, "obj": useResponse["obj"] };
     } else {
         if (useResponse.errorCode === 403) {
-            // step1：退出登录（后台）；
-            // step2：前端（重写本地存储）；
-            // step3：页面（重定向至登录注册页面）；
+            // step1：退出登录(后台);
+            // step2：前端(重写本地存储);
+            // step3：页面(重定向至登录注册页面)
         } else {
             return { "success": false, "obj": useResponse["msg"] };
         }
