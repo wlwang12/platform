@@ -8,7 +8,7 @@ class Home extends React.Component{
             <div>
                 <h4>THIS IS HOME PAGE </h4>
                 <p>
-                    <NavLink to="/second">to second page</NavLink>
+                    <NavLink to="/mainframe">to MainFrame page</NavLink>
                 </p>
             </div>
         )

@@ -1,6 +1,24 @@
 /*全局样式表   切勿修改   切勿修改   切勿修改   切勿修改   切勿修改   切勿修改   切勿修改*/
 /*全局样式表   切勿修改   切勿修改   切勿修改   切勿修改   切勿修改   切勿修改   切勿修改*/
 
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma, Arial, Roboto, 'Droid Sans', 'Helvetica Neue', 'Droid Sans Fallback', 'Heiti SC', sans-self;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+a{
+	font-size: 14px;
+	text-decoration: none;
+}
+
+ul, ol{
+	list-style: none;
+}
+
 /*width*/
 .w1{
 	width: 1px !important;

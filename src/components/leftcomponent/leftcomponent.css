@@ -1,0 +1,12 @@
+@import '~antd/dist/antd.css';
+
+.leftcomponent {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+    height: 100vh;
+    background:#121a2c;
+    padding-top: 80px;
+}

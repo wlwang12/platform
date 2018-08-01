@@ -1,6 +1,6 @@
 
 const init = {
-    loginStatus: false
+    loginStatus: true
 }
 
 const LoginStatus = (state = init, action) => {
@@ -15,3 +15,4 @@ const LoginStatus = (state = init, action) => {
 }
 
 export default LoginStatus
+

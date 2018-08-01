@@ -4,7 +4,7 @@ import store from './../../redux/store';
 import {loginStatusAction} from '../../redux/actions/loginStatusAction'
 
 class LoginPage extends React.Component{
-
+	
     toggleLogin () {
         store.dispatch(loginStatusAction())
     }

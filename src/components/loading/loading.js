@@ -3,7 +3,7 @@ import Protal from "../protal";
 import { Spin } from 'antd';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import styles from './loading.css';
+import './loading.css';
 
 class Loading extends React.Component {
     render () {
@@ -20,7 +20,7 @@ class Loading extends React.Component {
 
         return (
             <Protal>
-                <div className={styles.shield} style={togglestyle}>
+                <div className="shield" style={togglestyle}>
                     <Spin />
                 </div>
             </Protal>
@@ -29,3 +29,4 @@ class Loading extends React.Component {
 };
 
 export default withRouter(connect(state=>state)(Loading))
+
