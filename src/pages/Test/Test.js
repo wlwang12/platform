@@ -4,14 +4,21 @@ import React from 'react';
 import {withRouter} from 'react-router-dom';
 // 状态管理组建
 import {connect} from 'react-redux';
+//引入antd
+import { Row, Col } from 'antd';
 // 引入页面组建
-import Grade from '../../chartComponent/bar/grade/grade'
+import GradeDistribution from '../../chartComponent/roundRing/GradeDistribution/GradeDistribution'
 
 class Test extends React.Component {
 	render () {
 		return (
 			<React.Fragment>
-				<Grade />
+				<Row>
+					<Col span={12}>
+						<GradeDistribution />
+                    </Col>
+					<Col span={12}></Col>
+                </Row>
 			</React.Fragment>
 		)
 	}
