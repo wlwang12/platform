@@ -1,0 +1,12 @@
+@import '~antd/dist/antd.css';
+
+.groupportrait{
+    width: 100%;
+    overflow: hidden;
+}
+
+.groupportrait .breadcrumb{
+    width: 100%;
+    height: 60px;
+    background: white;
+}
