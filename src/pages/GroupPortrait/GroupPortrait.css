@@ -7,6 +7,14 @@
 
 .groupportrait .breadcrumb{
     width: 100%;
-    height: 60px;
+    height: 52px;
     background: white;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.groupportrait .filterform {
+    width: 100%;
+    height: 54px;
+    padding: 10px 20px;
 }

@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 //引入antd
 import { Row, Col } from 'antd';
 // 引入页面组建
-import GradeDistribution from '../../chartComponent/roundRing/GradeDistribution/GradeDistribution'
+import GradeDistribution from './../../chartComponent/roundChart/GradeDistribution/GradeDistribution';
 
 class Test extends React.Component {
 	render () {
