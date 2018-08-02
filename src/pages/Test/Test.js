@@ -7,18 +7,26 @@ import {connect} from 'react-redux';
 //引入antd
 import { Row, Col } from 'antd';
 // 引入页面组建
-import GradeDistribution from '../../chartComponent/roundRing/GradeDistribution/GradeDistribution'
+import BoyGirlProportion from '../../chartComponent/roundChart/BoyGirlProportion/BoyGirlProportion';
+import DegreeDistribution from '../../chartComponent/roundChart/DegreeDistribution/DegreeDistribution';
+
+
 
 class Test extends React.Component {
 	render () {
 		return (
 			<React.Fragment>
 				<Row>
+					{/*成绩分布*/}
 					<Col span={12}>
-						<GradeDistribution />
+						<BoyGirlProportion />
                     </Col>
-					<Col span={12}></Col>
+                    {/*平均成绩趋势*/}
+                    <Col span={12}>
+						<DegreeDistribution />
+                    </Col>
                 </Row>
+				
 			</React.Fragment>
 		)
 	}
