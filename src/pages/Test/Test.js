@@ -7,10 +7,8 @@ import {connect} from 'react-redux';
 //引入antd
 import { Row, Col } from 'antd';
 // 引入页面组建
-import BoyGirlProportion from '../../chartComponent/roundChart/BoyGirlProportion/BoyGirlProportion';
-import DegreeDistribution from '../../chartComponent/roundChart/DegreeDistribution/DegreeDistribution';
 
-
+import GradeDistribution from './../../chartComponent/roundChart/GradeDistribution/GradeDistribution';
 
 class Test extends React.Component {
 	render () {

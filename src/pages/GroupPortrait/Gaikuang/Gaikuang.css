@@ -1,0 +1,42 @@
+.Gaikuang{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 50px;
+}
+
+.Gaikuang .tabs{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.Gaikuang .tabs a{
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color:rgba(25,35,60,0.85);
+}
+
+.Gaikuang .tabs a.active{
+    background: #1890ff;
+    color: white;
+    transform: skewX(-20deg);
+}
+
+.Gaikuang .tabs > span {
+    display: inline-block;
+    margin: 0px 3px;
+}
+
+.Gaikuang .tabs a.active span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 28px;
+    transform: skewX(20deg);
+}
+
+
+
