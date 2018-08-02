@@ -107,6 +107,15 @@ module.exports = {
   module: {
     strictExportPresence: true,
     rules: [
+        {
+          test: /\.bundle\.js$/,
+          loader: require.resolve('bundle-loader'),
+          include:path.join(__dirname, 'src'),
+          options: {
+            lazy: true,
+            name: '[name]'
+        }
+      },
       // TODO: Disable require.ensure as it's not a standard language feature.
       // We are waiting for https://github.com/facebookincubator/create-react-app/issues/2176.
       // { parser: { requireEnsure: false } },
@@ -166,7 +175,7 @@ module.exports = {
           // use the "style" loader inside the async code so CSS from them won't be
           // in the main CSS file.
           {
-            test: /\.css$/,
+            test: /\.(css|less)$/,
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
@@ -204,6 +213,9 @@ module.exports = {
                           }),
                         ],
                       },
+                    },
+                    {
+                      loader: require.resolve('less-loader'),
                     },
                   ],
                 },
